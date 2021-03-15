@@ -1,7 +1,11 @@
 .DS_Store
 node_modules
 /dist
+package
+test/unit/coverage
 
+# lock files
+package-lock.json
 
 # local env files
 .env.local

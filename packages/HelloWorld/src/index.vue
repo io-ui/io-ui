@@ -1,12 +1,17 @@
 <template>
-    <div>
-        hello
-    </div>
+  <div class="helloworld">
+    hello,{{ this.test() }}
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'IoHelloWorld'
+    name: 'IoHelloWorld',
+    methods: {
+        test () {
+            return 'world'
+        }
+    }
 }
 </script>
 
