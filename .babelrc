@@ -11,7 +11,10 @@
     "env": {
         "test": {
             "plugins": [
-                "istanbul"
+                [
+                    "istanbul",
+                    { "exclude": [ "packages/**/index.js", "test/**" ] }
+                ]
             ]
         }
     }
