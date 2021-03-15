@@ -1,0 +1,11 @@
+language: node_js
+branches:
+  only:
+    - main
+node_js:
+  - 12
+install:
+  - npm install
+#before_script:
+script:
+  - npm run karma-single
