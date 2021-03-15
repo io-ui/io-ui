@@ -10,3 +10,15 @@ install:
 script:
   - npm run karma-single
   - npm run coverall
+after_success:
+  - npm run prod
+  - npm run docs:build
+  - cp -r /home/travis/build/io-ui/io-ui/doc/.vuepress/dist ../
+  - cd ../dist
+  - echo 'io-ui.pyjava.com' > CNAME
+  - git init
+  - git config user.name "${USER_NAME}"
+  - git config user.email "${USER_EMAIL}"
+  - git add -A
+  - git commit -m 'deploy'
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPO}" master:${BRANCH}

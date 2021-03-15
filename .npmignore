@@ -1,0 +1,31 @@
+.git
+.idea
+.cache
+/build
+/dev
+/node_modules
+/static
+/src/index.js
+.babelrc
+.coveralls.yml
+.eslintignore
+.eslintrc.js
+.gitignore
+.travis.yml
+babel.config.js
+
+# 测试
+/test
+# doc
+/doc
+/dist/*
+CVS
+.svn
+.hg
+.lock-wscript
+.wafpickle-N
+.*.swp
+._*
+npm-debug.log
+.npmrc
+config.gypi

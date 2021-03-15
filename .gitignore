@@ -28,3 +28,7 @@ yarn*
 *.njsproj
 *.sln
 *.sw?
+
+# doc
+
+doc/.vuepress/dist
