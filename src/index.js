@@ -1,9 +1,12 @@
 // 统一导出组件
 import IoHelloWorld from '../packages/HelloWorld'
+import IoIcon from '../packages/IoIcon/'
+import '../packages/IoIcon/src/font/iconfont'
 import VueCompositionApi from '@vue/composition-api'
 
 const components = {
-    IoHelloWorld
+    IoHelloWorld,
+    IoIcon
 }
 
 const install = function (Vue) {
@@ -20,5 +23,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     version: '0.0.1',
     install,
-    IoHelloWorld
+    IoHelloWorld,
+    IoIcon
 }
