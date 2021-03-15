@@ -9,3 +9,4 @@ install:
 #before_script:
 script:
   - npm run karma-single
+  - npm run coverall

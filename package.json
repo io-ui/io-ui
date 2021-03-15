@@ -12,10 +12,11 @@
         "dev": "webpack-dev-server --progress --history-api-fallback --config build/webpack.config.dev.js",
         "start": "npm run dev",
         "lint": "eslint ./",
-        "package:win": "npm run lint && rd /s/q package && webpack --config build/webpack.config.prod.js",
-        "package": "npm run lint && rm -rf package && webpack --config build/webpack.config.prod.js",
+        "prod:win": "npm run lint && rd /s/q package && webpack --config build/webpack.config.prod.js",
+        "prod": "npm run lint && rm -rf package && webpack --config build/webpack.config.prod.js",
         "karma-start": "npm run lint && cross-env BABEL_ENV=test karma start test/unit/karma.conf.js",
-        "karma-single": "npm run lint && cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
+        "karma-single": "npm run lint && cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+        "coverall": "cat test/unit/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
     },
     "repository": {
         "type": "git",
