@@ -32,7 +32,8 @@ module.exports = {
                 title: '组件',
                 collapsable: false,
                 children: [
-                    {title: 'hello world', path: '/zh/component/helloWorld'}
+                    {title: 'hello world', path: '/zh/component/helloWorld'},
+                    {title: 'icon 图标', path: '/zh/component/icon'}
                 ]
             }]
         },
