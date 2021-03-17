@@ -20,6 +20,7 @@
         <IoIcon name="hand-holding"/>
         <IoIcon name="sign-out-alt"/>
 
+        <IoIcon color="red"/>
     </div>
 </template>
 

@@ -6,6 +6,7 @@
 ```vue
 <template>
     <IoIcon/>
+    <IoIcon color="red"/>
     <IoIcon size="30px" disabled/>
     <IoIcon name="code"/>
     <IoIcon name="load1"/>
