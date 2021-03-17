@@ -1,7 +1,7 @@
 # io-ui
 
 [![Build Status](https://travis-ci.com/io-ui/io-ui.svg?branch=main)](https://travis-ci.com/io-ui/io-ui)
-[![Coverage Status](https://coveralls.io/repos/github/io-ui/io-ui/badge.svg?branch=main)](https://coveralls.io/github/io-ui/io-ui?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/io-ui/io-ui/badge.svg?branch=main)](https://coveralls.io/github/io-ui/io-ui?branch=main)
 ![GitHub](https://img.shields.io/github/license/io-ui/io-ui)
 ![npm](https://img.shields.io/npm/v/io-ui)
 
