@@ -7,9 +7,14 @@
     }">
         <svg :style="{fill:color}"
              :class="[
-                `io-`+name,
-        ]">
-            <use :xlink:href='`#icon-${name}`'></use>
+                `io-icon-`+iconName,
+                {
+                    'icon-loading':~name.indexOf('load'),
+                    'is-disabled':disabled
+                }
+            ]
+        ">
+            <use :xlink:href='`#icon-${iconName}`'></use>
         </svg>
     </div>
 </template>
@@ -19,9 +24,10 @@ export default {
     name: 'IoIcon',
     props: {
         color: String,
+        disabled: Boolean,
         name: {
             type: String,
-            default: 'auto'
+            default: 'question'
         },
         size: {
             type: [Number, String],
@@ -33,11 +39,19 @@ export default {
         iconSize () {
             if (typeof this.size === 'number') return this.size + 'px'
             else return this.size
+        },
+        iconName () {
+            if (this.name === 'load1') {
+                return 'spinner'
+            } else if (this.name === 'load2') {
+                return 'circle-notch'
+            }
+            return this.name
         }
     }
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import 'index.scss';
 </style>

@@ -1,0 +1,13 @@
+@import '../../style/animation.scss';
+@import "../../style/mixin.scss";
+@import "../../style/color.scss";
+
+@include b(icon) {
+  .#{$state-prefix}disabled {
+    cursor: not-allowed;
+    fill: $--color-disabled;
+  }
+  .icon-loading {
+    animation: rotating 1s infinite linear;
+  }
+}

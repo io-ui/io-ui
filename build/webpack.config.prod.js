@@ -45,7 +45,6 @@ module.exports = merge(baseConfig, {
             }, {
                 test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
                     'vue-style-loader',
                     'css-loader',
                     'sass-loader'

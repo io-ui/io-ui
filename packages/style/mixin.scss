@@ -1,0 +1,7 @@
+@import 'config/index';
+@mixin b($block) {
+  $B: $namespace+'-'+$block !global;
+  .#{$B} {
+    @content;
+  }
+}
