@@ -5,7 +5,7 @@
 @include b(icon) {
   .#{$state-prefix}disabled {
     cursor: not-allowed;
-    fill: $--color-disabled;
+    fill: $--color-gray5;
   }
   .icon-loading {
     animation: rotating 1s infinite linear;
