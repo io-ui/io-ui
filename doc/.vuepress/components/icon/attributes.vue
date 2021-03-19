@@ -16,7 +16,7 @@
                         <td>name</td>
                         <td class="des">icon 图标名</td>
                         <td class="type">String</td>
-                        <td>——</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>size</td>

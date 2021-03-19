@@ -20,3 +20,9 @@
 <ClientOnly>
 <icon-attributes></icon-attributes>
 </ClientOnly>
+
+## icon 列表
+
+<ClientOnly>
+<icon-list></icon-list>
+</ClientOnly>
