@@ -33,7 +33,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     {title: 'hello world', path: '/zh/component/helloWorld'},
-                    {title: 'icon 图标', path: '/zh/component/icon'}
+                    {title: 'icon 图标', path: '/zh/component/icon'},
+                    {title: 'button 按钮', path: '/zh/component/button'}
                 ]
             }]
         },

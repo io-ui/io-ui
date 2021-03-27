@@ -1,5 +1,6 @@
 $namespace: 'io';
 $state-prefix: 'is-';
+$disabled: $state-prefix+'disabled';
 
 $io-separator: '__';
 $io-modifier-separator: '--';
