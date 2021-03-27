@@ -1,7 +1,169 @@
 @import 'config/index';
+@import 'color';
 @mixin b($block) {
   $B: $namespace+'-'+$block !global;
   .#{$B} {
     @content;
+  }
+}
+
+// button
+@mixin buttonColor($type) {
+  @if $type == 'default' {
+    color: $--color-black;
+    background-color: $--color-white;
+    border-color: $--color-gray7;
+    &:not(.#{$disabled}) {
+      &:hover {
+        color: $--color-black;
+        background-color: $--color-white;
+        border-color: $--color-gray9;
+      }
+
+      &:active {
+        color: $--color-black;
+        background-color: $--color-gray2;
+        border-color: $--color-gray9;
+      }
+    }
+    &.#{$disabled} {
+      cursor: not-allowed;
+      background-color: $--color-white;
+      border-color: $--color-gray7;
+      color: $--color-gray5;
+    }
+  }
+
+  @if $type == 'info' {
+    color: $--color-white;
+    background-color: $--color-gray7;
+    border-color: $--color-gray7;
+    &:not(.#{$disabled}) {
+      &:hover {
+        color: $--color-white;
+        background-color: $--color-gray5;
+        border-color: $--color-gray5;
+      }
+
+      &:active {
+        color: $--color-white;
+        background-color: $--color-gray6;
+        border-color: $--color-gray6;
+      }
+    }
+    &.#{$disabled} {
+      cursor: not-allowed;
+      color: $--color-white;
+      background-color: $--color-gray4;
+      border-color: $--color-gray4;
+    }
+  }
+
+  @if $type == 'primary' {
+    color: $--color-white;
+    background-color: $--color-primary5;
+    border-color: $--color-primary5;
+    &:not(.#{$disabled}) {
+      &:hover {
+        color: $--color-white;
+        background-color: $--color-primary3;
+        border-color: $--color-primary3;
+      }
+
+      &:active {
+        color: $--color-white;
+        background-color: $--color-primary4;
+        border-color: $--color-primary4;
+      }
+    }
+    &.#{$disabled} {
+      cursor: not-allowed;
+      color: $--color-white;
+      background-color: $--color-primary1;
+      border-color: $--color-primary1;
+    }
+  }
+
+  @if $type == 'success' {
+    color: $--color-white;
+    background-color: $--color-success5;
+    border-color: $--color-success5;
+    &:not(.#{$disabled}) {
+      &:hover {
+        color: $--color-white;
+        background-color: $--color-success3;
+        border-color: $--color-success3;
+      }
+
+      &:active {
+        color: $--color-white;
+        background-color: $--color-success4;
+        border-color: $--color-success4;
+      }
+    }
+    &.#{$disabled} {
+      cursor: not-allowed;
+      color: $--color-white;
+      background-color: $--color-success1;
+      border-color: $--color-success1;
+    }
+  }
+
+  @if $type == 'error' {
+    color: $--color-white;
+    background-color: $--color-error5;
+    border-color: $--color-error5;
+    &:not(.#{$disabled}) {
+      &:hover {
+        color: $--color-white;
+        background-color: $--color-error3;
+        border-color: $--color-error3;
+      }
+
+      &:active {
+        color: $--color-white;
+        background-color: $--color-error4;
+        border-color: $--color-error4;
+      }
+    }
+    &.#{$disabled} {
+      cursor: not-allowed;
+      color: $--color-white;
+      background-color: $--color-error1;
+      border-color: $--color-error1;
+    }
+  }
+
+  @if $type == 'warning' {
+    color: $--color-white;
+    background-color: $--color-warning5;
+    border-color: $--color-warning5;
+    &:not(.#{$disabled}) {
+      &:hover {
+        color: $--color-white;
+        background-color: $--color-warning3;
+        border-color: $--color-warning3;
+      }
+
+      &:active {
+        color: $--color-white;
+        background-color: $--color-warning4;
+        border-color: $--color-warning4;
+      }
+    }
+    &.#{$disabled} {
+      cursor: not-allowed;
+      color: $--color-white;
+      background-color: $--color-warning1;
+      border-color: $--color-warning1;
+    }
+  }
+}
+
+@mixin buttonType($name) {
+  @each $type in (default, primary, info, success, error, warning) {
+    .#{$name}#{$type} {
+      @include buttonColor($type);
+    }
   }
 }

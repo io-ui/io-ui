@@ -1,0 +1,17 @@
+@import "../../style/mixin.scss";
+@import "../../style/color.scss";
+
+@include b(button) {
+    cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    outline: none;
+    border-style: solid;
+    border-radius: 4px;
+    @at-root {
+        @include buttonType(io-button-)
+    }
+;
+}
