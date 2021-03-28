@@ -2,6 +2,7 @@
     <button class="io-button"
             @click="handleClick"
             :class="[
+            sizeType,
             type ? 'io-button-' + type: '',
             {
                 'is-disabled':disabled
@@ -21,6 +22,10 @@ export default {
         disabled: {
             type: Boolean,
             default: false
+        },
+        size: {
+            type: String,
+            default: 'normal'
         }
     },
     methods: {
@@ -28,6 +33,13 @@ export default {
             if (!this.disabled) {
                 this.$emit('click')
             }
+        }
+    },
+    computed: {
+        sizeType () {
+            const sizeList = ['big', 'small']
+            if (sizeList.includes(this.size)) return 'size-' + this.size
+            return 'size-normal'
         }
     }
 }

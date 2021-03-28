@@ -52,6 +52,12 @@
         <IoButton type="warning">hello</IoButton>
         <IoButton type="warning" disabled>hello</IoButton>
         <br>
+        <br>
+        <IoButton type="warning" size="small">hello</IoButton>
+        <IoButton type="warning" size="normal">hello</IoButton>
+        <IoButton type="warning">hello</IoButton>
+        <IoButton type="warning" size="big">hello</IoButton>
+        <br>
         <IoButton @click="clickCount(cnt) ">{{ cnt }}</IoButton>
         <IoButton @click="clickCount1(cnt1)" disabled>{{ cnt1 }}</IoButton>
 
