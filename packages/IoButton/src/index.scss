@@ -1,5 +1,5 @@
-@import "../../style/mixin.scss";
-@import "../../style/color.scss";
+@import "../../style/mixin/mixin";
+@import "../../style/mixin/button";
 
 @include b(button) {
     cursor: pointer;
@@ -13,5 +13,4 @@
     @at-root {
         @include buttonType(io-button-)
     }
-;
 }
