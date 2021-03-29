@@ -1,6 +1,6 @@
 @import '../../style/animation.scss';
-@import "../../style/mixin.scss";
-@import "../../style/color.scss";
+@import "../../style/mixin/mixin";
+@import "../../style/color/color";
 
 @include b(icon) {
     .#{$state-prefix}disabled {

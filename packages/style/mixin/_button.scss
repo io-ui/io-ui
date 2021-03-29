@@ -1,0 +1,50 @@
+@import '../config/index';
+@import '../color/color';
+@import '../color/button';
+@import '../font';
+
+// button
+@mixin buttonColor($type) {
+    color: map-get($button-color-map, --button-#{$type}-color);
+    background-color: map-get($button-color-map, --button-#{$type}-background-color);
+    border-color: map-get($button-color-map, --button-#{$type}-border-color);
+    &:not(.#{$disabled}) {
+        &:hover {
+            color: map-get($button-color-map, --button-#{$type}-hover-color);
+            background-color: map-get($button-color-map, --button-#{$type}-hover-background-color);
+            border-color: map-get($button-color-map, --button-#{$type}-hover-border-color);
+        }
+
+        &:active {
+            color: map-get($button-color-map, --button-#{$type}-active-color);
+            background-color: map-get($button-color-map, --button-#{$type}-active-background-color);
+            border-color: map-get($button-color-map, --button-#{$type}-active-border-color);
+        }
+    }
+    &.#{$disabled} {
+        cursor: not-allowed;
+        color: map-get($button-color-map, --button-#{$type}-disabled-color);
+        background-color: map-get($button-color-map, --button-#{$type}-disabled-background-color);
+        border-color: map-get($button-color-map, --button-#{$type}-disabled-border-color);
+    }
+    &.size-big {
+        font-size: $--size-big;
+        padding: 6px 11px;
+    }
+    &.size-normal {
+        font-size: $--size-normal;
+        padding: 4px 8px;
+    }
+    &.size-small {
+        font-size: $--size-small;
+        padding: 2px 6px;
+    }
+}
+
+@mixin buttonType($name) {
+    @each $type in (default, primary, info, success, error, warning) {
+        .#{$name}#{$type} {
+            @include buttonColor($type);
+        }
+    }
+}

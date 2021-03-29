@@ -1,0 +1,105 @@
+@import "color";
+// default
+$button-color-map: (
+    //default
+    --button-default-color: $--color-black,
+    --button-default-background-color: $--color-white,
+    --button-default-border-color: $--color-gray7,
+
+    --button-default-hover-color: $--color-black,
+    --button-default-hover-background-color: $--color-white,
+    --button-default-hover-border-color: $--color-gray9,
+
+    --button-default-active-color: $--color-black,
+    --button-default-active-background-color: $--color-gray2,
+    --button-default-active-border-color: $--color-gray9,
+
+    --button-default-disabled-color: $--color-gray5,
+    --button-default-disabled-background-color: $--color-white,
+    --button-default-disabled-border-color: $--color-gray7,
+
+    //info
+    --button-info-color: $--color-white,
+    --button-info-background-color: $--color-gray7,
+    --button-info-border-color: $--color-gray7,
+
+    --button-info-hover-color: $--color-white,
+    --button-info-hover-background-color: $--color-gray5,
+    --button-info-hover-border-color: $--color-gray5,
+
+    --button-info-active-color: $--color-white,
+    --button-info-active-background-color: $--color-gray6,
+    --button-info-active-border-color: $--color-gray6,
+
+    --button-info-disabled-color: $--color-white,
+    --button-info-disabled-background-color: $--color-gray4,
+    --button-info-disabled-border-color: $--color-gray4,
+
+    //primary
+    --button-primary-color: $--color-white,
+    --button-primary-background-color: $--color-primary5,
+    --button-primary-border-color: $--color-primary5,
+
+    --button-primary-hover-color: $--color-white,
+    --button-primary-hover-background-color: $--color-primary3,
+    --button-primary-hover-border-color: $--color-primary3,
+
+    --button-primary-active-color: $--color-white,
+    --button-primary-active-background-color: $--color-primary4,
+    --button-primary-active-border-color: $--color-primary4,
+
+    --button-primary-disabled-color: $--color-white,
+    --button-primary-disabled-background-color: $--color-primary2,
+    --button-primary-disabled-border-color: $--color-primary2,
+
+    // success
+    --button-success-color: $--color-white,
+    --button-success-background-color: $--color-success5,
+    --button-success-border-color: $--color-success5,
+
+    --button-success-hover-color: $--color-white,
+    --button-success-hover-background-color: $--color-success3,
+    --button-success-hover-border-color: $--color-success3,
+
+    --button-success-active-color: $--color-white,
+    --button-success-active-background-color: $--color-success4,
+    --button-success-active-border-color: $--color-success4,
+
+    --button-success-disabled-color: $--color-white,
+    --button-success-disabled-background-color: $--color-success2,
+    --button-success-disabled-border-color: $--color-success2,
+
+    //error
+    --button-error-color: $--color-white,
+    --button-error-background-color: $--color-error5,
+    --button-error-border-color: $--color-error5,
+
+    --button-error-hover-color: $--color-white,
+    --button-error-hover-background-color: $--color-error3,
+    --button-error-hover-border-color: $--color-error3,
+
+    --button-error-active-color: $--color-white,
+    --button-error-active-background-color: $--color-error4,
+    --button-error-active-border-color: $--color-error4,
+
+    --button-error-disabled-color: $--color-white,
+    --button-error-disabled-background-color: $--color-error2,
+    --button-error-disabled-border-color: $--color-error2,
+
+    //warning
+    --button-warning-color: $--color-white,
+    --button-warning-background-color: $--color-warning5,
+    --button-warning-border-color: $--color-warning5,
+
+    --button-warning-hover-color: $--color-white,
+    --button-warning-hover-background-color: $--color-warning3,
+    --button-warning-hover-border-color: $--color-warning3,
+
+    --button-warning-active-color: $--color-white,
+    --button-warning-active-background-color: $--color-warning4,
+    --button-warning-active-border-color: $--color-warning4,
+
+    --button-warning-disabled-color: $--color-white,
+    --button-warning-disabled-background-color: $--color-warning2,
+    --button-warning-disabled-border-color: $--color-warning2,
+);
