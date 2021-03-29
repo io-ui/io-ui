@@ -27,6 +27,20 @@
                             <td>false</td>
                             <td>--</td>
                         </tr>
+                        <tr>
+                            <td>icon</td>
+                            <td class="des">图标类型</td>
+                            <td class="type">String</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>size</td>
+                            <td class="des">按钮大小</td>
+                            <td class="type">String</td>
+                            <td>normal</td>
+                            <td>small,normal,big</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
