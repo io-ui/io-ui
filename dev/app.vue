@@ -62,6 +62,8 @@
         <IoButton @click="clickCount1(cnt1)" disabled>{{ cnt1 }}</IoButton>
         <br>
         <br>
+        <IoButton icon="home"></IoButton>
+
         <IoButton icon="load1">hello</IoButton>
         <IoButton icon="home">hello</IoButton>
         <IoButton icon="home" disabled>hello</IoButton>
