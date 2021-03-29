@@ -1,6 +1,6 @@
 {
     "name": "io-ui",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "io vue ui",
     "license": "MIT",
     "main": "package/io-ui.js",
