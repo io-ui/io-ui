@@ -2,7 +2,7 @@
 
 ## 简单用法
 
-::: demo  `IoUi` icon 组件示例
+::: demo  `IoIcon` icon 组件示例
 ```vue
 <template>
     <IoIcon/>
