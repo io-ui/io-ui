@@ -2,11 +2,16 @@
     <button class="io-button"
             @click="handleClick"
             :class="[
-            sizeType,
             type ? 'io-button-' + type: '',
             {
                 'is-disabled':disabled
-            }]">
+            },
+            sizeType]">
+        <IoIcon
+            v-if="icon"
+            :name="icon"
+            :color="iconColor"
+            style="margin-right: 2px"></IoIcon>
         <slot/>
     </button>
 </template>
@@ -26,6 +31,9 @@ export default {
         size: {
             type: String,
             default: 'normal'
+        },
+        icon: {
+            type: String
         }
     },
     methods: {
@@ -40,6 +48,15 @@ export default {
             const sizeList = ['big', 'small']
             if (sizeList.includes(this.size)) return 'size-' + this.size
             return 'size-normal'
+        },
+        iconColor () {
+            if (this.type === 'default' && this.disabled === false) {
+                return '#000000'
+            } else if (this.type === 'default' && this.disabled === true) {
+                return '#BFBFBF'
+            } else {
+                return '#FFFFFF'
+            }
         }
     }
 }

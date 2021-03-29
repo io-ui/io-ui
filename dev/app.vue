@@ -60,7 +60,22 @@
         <br>
         <IoButton @click="clickCount(cnt) ">{{ cnt }}</IoButton>
         <IoButton @click="clickCount1(cnt1)" disabled>{{ cnt1 }}</IoButton>
-
+        <br>
+        <br>
+        <IoButton icon="load1">hello</IoButton>
+        <IoButton icon="home">hello</IoButton>
+        <IoButton icon="home" disabled>hello</IoButton>
+        <IoButton type="primary" icon="home">hello</IoButton>
+        <IoButton type="primary" icon="home" disabled>hello</IoButton>
+        <IoButton type="info" icon="home">hello</IoButton>
+        <IoButton type="info" icon="home" disabled>hello</IoButton>
+        <IoButton type="success" icon="home">hello</IoButton>
+        <IoButton type="success" icon="home" disabled>hello</IoButton>
+        <IoButton type="error" icon="home">hello</IoButton>
+        <IoButton type="error" icon="home" disabled>hello</IoButton>
+        <IoButton type="warning" icon="home">hello</IoButton>
+        <IoButton type="warning" icon="home" disabled>hello</IoButton>
+        <br>
         <hr>
     </div>
 </template>
